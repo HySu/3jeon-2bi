@@ -31,7 +31,6 @@
 
         section {
             width: 100%;
-            background-color: green;
             height: auto;
         }
 
@@ -58,12 +57,50 @@
             text-decoration-line: none;
         }
 
-
         .bar-menu .other {
             color: white;
         }
 
         /* 상단 바 css 끝 */
+
+        /* main.html css 시작 */
+        .top-section {
+            display: flex;
+            flex-direction: row;
+            margin: 30px auto 0px auto;
+            width: 800px;
+            height: auto;
+        }
+
+        .logo-wrap {
+            margin-right: 30px;
+        }
+
+        .logo-wrap img {
+            width: 300px;
+            height: 250px;
+        }
+
+        .ballon-wrap {
+            width: 500px;
+            height: 250px;
+        }
+
+        .ballon-wrap img {
+            width: 500px;
+            height: 250px;
+            border-radius: 20px;
+        }
+
+        .bottom-section {
+            margin: 30px auto 0px auto;
+            width: 950px;
+            height: auto;
+        }
+
+        .bottom-section img {
+            width: 950px;
+        }
     </style>
 </head>
 
@@ -75,19 +112,19 @@
             <img src="img/3J2B_logo.png" alt="">
         </div>
         <div class="bar-menu black-han-sans-regular">
-            <a href="#">
+            <a href="main.html">
                 <span class="current">MAIN</span>
             </a>
         </div>
 
         <div class="bar-menu black-han-sans-regular">
-            <a href="#">
+            <a href="blog.html">
                 <span class="other">BLOG</span>
             </a>
         </div>
 
         <div class="bar-menu black-han-sans-regular">
-            <a href="#">
+            <a href="team.html">
                 <span class="other">TEAM</span>
             </a>
         </div>
@@ -95,6 +132,20 @@
 
     <!--본문 -->
     <section>
+
+        <div class="top-section">
+            <div class="logo-wrap">
+                <img src="img/3J2B_logo.png" alt="">
+            </div>
+
+            <div class="ballon-wrap">
+                <img src="img/ballon.png" alt="">
+            </div>
+        </div>
+
+        <div class="bottom-section">
+            <img src="img/team_dance.gif" alt="">
+        </div>
 
     </section>
 </body>
