@@ -19,9 +19,9 @@
         }
 
         header {
-            margin: 30px auto 0px auto;
-            width: 80%;
-            height: 100px;
+            margin: 2vh auto 0px auto;
+            width: 80vw;
+            height: 7.75vh;
             background-color: rgb(59, 59, 59);
             display: flex;
             flex-direction: row;
@@ -34,18 +34,18 @@
         }
 
         .bar-logo>img {
-            height: 100px;
-            width: 150px;
+            height: 7.75vh;
+            width: 6vw;
         }
 
         .bar-menu {
-            height: 100px;
-            width: 200px;
+            height: 7.5vh;
+            width: 12vw;
             background-color: rgb(59, 59, 59);
             justify-content: center;
             align-items: center;
             display: flex;
-            font-size: 42px;
+            font-size: 1.5vw;
         }
 
         .bar-menu .current {
@@ -67,8 +67,8 @@
         .team {
             height: 30vh;
             width: 40vw;
-            margin: 20px auto 20px auto;
-            color: white;
+            margin: 1.5vh auto 1.5vh auto;
+            color: black;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -78,14 +78,14 @@
         }
 
         .team::after {
-            height: 30vh;
+            height: 28vh;
             width: 38vw;
             content: "";
             background-image: url('img/3j2b_teamtext.png');
             background-position: center;
             background-size: cover;
             position: absolute;
-            top: 33vh;
+            top: 30vh;
             left: 50vw;
             transform: translate3d(-50%, -50%, 0);
             z-index: -1;
@@ -96,23 +96,23 @@
             font-family: "Nanum Gothic Coding", monospace;
             font-weight: 700;
             font-style: normal;
-            font-size: 30px;
+            font-size: 1.3vw;
             text-align: center;
+            margin-top: 5vh;
         }
 
         .promise {
             font-family: "Nanum Gothic Coding", monospace;
             font-weight: 600;
             font-style: normal;
-            font-size: 22px;
+            font-size: 0.9vw;
             text-align: center;
         }
 
         .cards {
-            padding: 20px;
+            padding: 1vw;
             justify-content: center;
             flex-wrap: wrap;
-            margin: 0;
             display: flex;
             flex-direction: row;
         }
@@ -125,19 +125,19 @@
             margin: 1.5vh;
             margin-right: 3vw;
             margin-left: 2.5vw;
-            border-radius: 10px;
+            border-radius: 0.7vh;
             font-family: "Noto Sans KR", sans-serif;
             font-optical-sizing: auto;
             font-weight: 600;
             font-style: normal;
-            font-size: 23px;
+            font-size: 1.8vh;
         }
 
         .card-img {
             width: 100%;
             height: 100%;
             transition: opacity 0.3s;
-            border-radius: 10px;
+            border-radius: 0.75vh;
             position: absolute;
             top: 0;
             left: 0;
@@ -152,7 +152,7 @@
             margin-top: 4vh;
             width: 100%;
             height: 100%;
-            border-radius: 10px;
+            border-radius: 0.75vh;
             position: absolute;
             top: 0;
             left: 0;
@@ -162,7 +162,7 @@
             justify-content: center;
             align-items: center;
             color: white;
-            font-size: 17px;
+            font-size: 1.4vh;
             background-color: #474747;
             border: 0.3vw solid gray;
             font-family: "Noto Sans KR", sans-serif;
@@ -182,8 +182,7 @@
             justify-content: center;
             align-items: center;
             color: white;
-            font-size: 20px;
-            padding: 5px;
+            font-size: 1.5vh;
             opacity: 0;
             transition: opacity 0.5s;
             font-family: "Noto Sans KR", sans-serif;
@@ -252,7 +251,7 @@
     <div class="team">
         <h1 class=teamtext>&emsp;소통이 잘 되는 팀! 실력있는 팀이 되자!!</h1>
         <h2 class=promise>
-            <우리들의약속><br><br>
+            <br><우리들의약속><br><br>
                 시간 관리를 잘하자!
         </h2>
     </div>
@@ -261,9 +260,9 @@
 
     <div class="cards">
         <div class="card">팀장 임현수
-            <img src="#" class="card-img" id="card-img1">
-            <div class="card-text" id="card-text1" onclick="openclose(1)">팀장 임현수<br><br><br>총괄 / 메인페이지 / 발표</div>
-            <div class="card-back" id="card-back1" onclick="openclose(1)">이름 : <br> 임현수<br><br>MBTI 및 자기소개 :
+            <img src="img/hyunsu.jpg" class="card-img" id="card-img1">
+            <div class="card-text" id="card-text1" onclick="openclose(1)"><br>팀장 임현수<br><br><br>총괄 / 메인페이지 / 발표</div>
+            <div class="card-back" id="card-back1" onclick="openclose(1)"><br>MBTI 및 자기소개 :
                 <br>ESTJ, 일일루틴을 중심으로 <br>시간관리를 철저히하는 사람입니다. <br>산책, 독서를 취미로 합니다.<br><br> 객관적으로 본 자신의 장점
                 : <br>시간관리를 철저히 합니다. <br>일에 대한 계획적인 접근 능력이 높습니다.<br><br> 자신만의 협업스타일 : <br> 의사소통을 통해 의견을 취합해서<br> 결과물을
                 이끌어내는
@@ -271,18 +270,19 @@
             </div>
         </div>
         <div class="card">팀원 이한준
-            <img src="#" class="card-img" id="card-img2">
-            <div class="card-text" id="card-text2" onclick="openclose(2)">팀원 이한준<br><br><br>팀 페이지 제작</div>
-            <div class="card-back" id="card-back2" onclick="openclose(2)">이름 : <br> 이한준<br><br>MBTI 및 자기소개 :
+            <img src="img/hanjun.jpg" class="card-img" id="card-img2">
+            <div class="card-text" id="card-text2" onclick="openclose(2)"><br>팀원 이한준<br><br><br>팀 페이지 제작</div>
+            <div class="card-back" id="card-back2" onclick="openclose(2)"><br>MBTI 및 자기소개 :
+
                 <br>ENTP, 비전공? 공부량으로 극복하면 그만! <br>열정을 한 가득 가지고 갓 전역한 22살!<br><br> 객관적으로 본 자신의 장점
                 : <br>한 번 몰입하면 9 to 9 정도는 아무것도 아닌<br> 체력과 집중력! <br><br> 자신만의 협업스타일 : <br> 배우는 자세로 임하며, 의견 충돌이 <br> 발생하여도
                 상대방의 주장과 방식에 관해 <br>최대한 존중합니다.
             </div>
         </div>
         <div class="card">팀원 정선우
-            <img src="#" class="card-img" id="card-img3">
-            <div class="card-text" id="card-text3" onclick="openclose(3)">팀원 정선우<br><br><br>&emsp;메인페이지 및 레이아웃 제작</div>
-            <div class="card-back" id="card-back3" onclick="openclose(3)">이름 : <br> 정선우<br><br>MBTI 및 자기소개 :
+            <img src="img/seonwoo.jpg" class="card-img" id="card-img3">
+            <div class="card-text" id="card-text3" onclick="openclose(3)"><br>팀원 양혁진<br><br><br>&emsp;메인페이지 및 레이아웃 제작</div>
+            <div class="card-back" id="card-back3" onclick="openclose(3)"><br>MBTI 및 자기소개 :
                 <br>INTJ, <br><br> 객관적으로 본 자신의 장점
                 : <br>자신의 생각을 명확하게 전달하고,<br>상대방의 의견을 잘 듣고 이해하는 것
                 입니다.<br><br> 자신만의 협업스타일 : <br> 역할 분담과 정기적인 회의를 통해 <br>
@@ -290,9 +290,10 @@
             </div>
         </div>
         <div class="card">팀원 양혁진
-            <img src="#" class="card-img" id="card-img4">
-            <div class="card-text" id="card-text4" onclick="openclose(4)">팀원 양혁진<br><br><br>블로그 페이지 제작</div>
-            <div class="card-back" id="card-back4" onclick="openclose(4)">이름 : <br> 양혁진<br><br>MBTI 및 자기소개 :
+
+            <img src="img/hyeokjin.png" class="card-img" id="card-img4">
+            <div class="card-text" id="card-text4" onclick="openclose(4)"><br>팀원 양혁진<br><br><br>블로그 페이지 제작</div>
+            <div class="card-back" id="card-back4" onclick="openclose(4)"><br>MBTI 및 자기소개 :
                 <br>INFP, 포기를 모르고 성공 할 때 까지 <br>도전하는 도전왕!<br><br> 객관적으로 본 자신의 장점
                 : <br>될때까지 끊임없이 배우고 <br>해결할때까지 포기하지 않는것.<br><br> 자신만의 협업스타일 : <br> 소통을 가장 큰 중점으로 둡니다.
                 <br>소통이 안되면 협업이 너무 힘들기 때문에
