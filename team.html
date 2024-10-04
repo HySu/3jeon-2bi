@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teampage</title>
+    <title>삼전이비</title>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
@@ -64,48 +64,43 @@
             background-color: lightgray;
         }
 
+        .team-image {
+            height: 30vh;
+            width: 30vw;
+        }
+
         .team {
             height: 30vh;
-            width: 40vw;
-            margin: 1.5vh auto 1.5vh auto;
+            width: 70vw;
+            margin: 3.5vh auto 1.5vh auto;
             color: black;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: row;
+            background-position: center;
+            background-size: cover;
+            
+            border: 0.3vw solid white
+        }
+
+        .teamtext{
+            height: 30vh;
+            width: 45vw;
             flex-direction: column;
-            background-position: center;
-            background-size: cover;
+            border-left: 0.3vw solid white;
         }
-
-        .team::after {
-            height: 28vh;
-            width: 36vw;
-            content: "";
-            background-image: url('img/3j2b_teamtext.png');
-            background-position: center;
-            background-size: cover;
-            position: absolute;
-            margin-top:250px;
-            left: 50vw;
-            transform: translate3d(-50%, -50%, 0);
-            z-index: -1;
-            opacity: 0.65;
-        }
-
-        .teamtext {
-            font-family: "Nanum Gothic Coding", monospace;
-            font-weight: 700;
-            font-style: normal;
-            font-size: 1.3vw;
+        .text1 {
+            font-size: 2.5vw;
             text-align: center;
             margin-top: 5vh;
         }
 
-        .promise {
+        .text2 {
             font-family: "Nanum Gothic Coding", monospace;
             font-weight: 600;
             font-style: normal;
-            font-size: 0.9vw;
+            font-size: 1.3vw;
             text-align: center;
         }
 
@@ -130,7 +125,7 @@
             font-optical-sizing: auto;
             font-weight: 600;
             font-style: normal;
-            font-size: 1.9vh;
+            font-size: 2.4vh;
         }
 
         .card-img {
@@ -162,7 +157,7 @@
             justify-content: center;
             align-items: center;
             color: white;
-            font-size: 1.6vh;
+            font-size: 1.9vh;
             background-color: #474747;
             border: 0.3vw solid gray;
             font-family: "Noto Sans KR", sans-serif;
@@ -182,7 +177,7 @@
             justify-content: center;
             align-items: center;
             color: white;
-            font-size: 1.5vh;
+            font-size: 2vh;
             opacity: 0;
             transition: opacity 0.5s;
             font-family: "Noto Sans KR", sans-serif;
@@ -191,8 +186,8 @@
             font-style: normal;
             text-align: center;
         }
-        
-        .footer{
+
+        .footer {
             height: 10vh;
         }
 
@@ -203,7 +198,6 @@
         .card:hover .card-text {
             opacity: 1;
         }
-
     </style>
 
     <script>
@@ -247,14 +241,18 @@
             </a>
         </div>
     </header>
-        
+
     <div class="team">
-        <h1 class=teamtext>&emsp;소통이 잘 되는 팀! 실력있는 팀이 되자!!</h1>
-        <h2 class=promise>
-            <br><우리들의약속><br><br>
-                시간 관리를 잘하자!
-        </h2>
-    </div>
+        <span>
+            <img src="img/3j2b_teamtext.png" class="team-image">
+        </span>
+        <span class="teamtext">
+            <h1 class="text1 black-han-sans-regular">소통이 잘 되는 팀! 실력있는 팀이 되자!!</h1>
+            <h2 class="text2">
+                <우리들의약속><br><br>
+                    시간 관리를 잘하자!
+            </h2>
+        </span>
     </div>
 
 
@@ -281,9 +279,10 @@
         </div>
         <div class="card">팀원 정선우
             <img src="img/seonwoo.jpg" class="card-img" id="card-img3">
-            <div class="card-text" id="card-text3" onclick="openclose(3)"><br>팀원 양혁진<br><br><br>&emsp;메인페이지 및 레이아웃 제작</div>
+            <div class="card-text" id="card-text3" onclick="openclose(3)"><br>팀원 정선우<br><br><br>&emsp;메인페이지 및 레이아웃 제작
+            </div>
             <div class="card-back" id="card-back3" onclick="openclose(3)"><br>MBTI 및 자기소개 :
-                <br>INTJ, <br><br> 객관적으로 본 자신의 장점
+                <br>INTJ,하나를 배우더라도 제대로 깊게 <br>DeepDIve 합니다. <br><br> 객관적으로 본 자신의 장점
                 : <br>자신의 생각을 명확하게 전달하고,<br>상대방의 의견을 잘 듣고 이해하는 것
                 입니다.<br><br> 자신만의 협업스타일 : <br> 역할 분담과 정기적인 회의를 통해 <br>
                 팀워크를 강화하면 좋겠습니다.
@@ -300,8 +299,8 @@
             </div>
         </div>
     </div>
-    <div class= footer>
-    
+    <div class=footer>
+
     </div>
 </body>
 
