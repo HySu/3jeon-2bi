@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>삼전이비</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
@@ -32,12 +32,12 @@
 
         section {
             width: 80%;
-            background-color: rgba(0, 255, 115, 0);
+            background-color: rgba(22, 223, 113, 0);
             height: auto;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 50px;
-            margin-top: 200px;
+            margin-top: 65px;
             margin-left: 10%;
         }
 
@@ -91,143 +91,164 @@
         .text-body-4 {
             text-color
         }
+
+        .card-text {
+            font-size: 1vw; /* 화면 너비에 비례한 크기로 폰트 크기 조정 */
+        }
+
+        .card-title {
+            font-size: 1vw; /* 화면 너비에 비례한 크기로 폰트 크기 조정 */
+        }
+
+        .text-body-3 {
+            font-size: 1vw;
+        }
+
+        .text-body-4 {
+            font-size: 1vw;
+            color: rgb(172, 172, 172);
+        }
+
+
     </style>
 </head>
 
 <body>
 
 
-    <header>
-        <div class="bar-logo">
-            <img src="img/3J2B_logo.png" alt="">
-        </div>
-        <div class="bar-menu black-han-sans-regular">
-            <a href="main.html">
-                <span class="current">MAIN</span>
-            </a>
-        </div>
+<header>
+    <div class="bar-logo">
+        <img src="img/3J2B_logo.png" alt="">
+    </div>
+    <div class="bar-menu black-han-sans-regular">
+        <a href="main.html">
+            <span class="current">MAIN</span>
+        </a>
+    </div>
 
-        <div class="bar-menu black-han-sans-regular">
-            <a href="blog.html">
-                <span class="blog">BLOG</span>
-            </a>
-        </div>
+    <div class="bar-menu black-han-sans-regular">
+        <a href="blog.html">
+            <span class="blog">BLOG</span>
+        </a>
+    </div>
 
-        <div class="bar-menu black-han-sans-regular">
-            <a href="team.html">
-                <span class="other">TEAM</span>
-            </a>
-        </div>
-    </header>
+    <div class="bar-menu black-han-sans-regular">
+        <a href="team.html">
+            <span class="other">TEAM</span>
+        </a>
+    </div>
+</header>
 
 
-    <section>
+<section>
 
-        <a href="https://bluewhale-korea.tistory.com/" style="text-decoration: none; color: inherit;">
-            <div class="card mb-3" style="max-width: 10000px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="img/bluewhale_3J2B.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title" style="display: inline-block;">임현수님 블로그</h5>
-                            <img src="img/icontistory.png" alt="블로그 아이콘"
-                                style="width: 25px; height: 25px; margin-left: 1px; margin-bottom: 6px; display: inline-block; vertical-align: middle;">
-                            <p class="card-text">팀장</p>
-                            <p class="card-text">bluewhale-korea 님의 블로그 입니다..<small class="text-body-secondary"><br><br>
-                                </small></p> <small class="text-body-3">스파르타코딩클럽 Spirng 7기 본캠프 3일차</small></p> <small
-                                class="text-body-4" style="color: rgb(172, 172, 172);">오전 스크럼 회의우리 팀은 오전 9시 10분에 스크럼 회의를
-                                하고 개발 및 공부에 들어간다. 2024년 10월 4일까지
-                                미니프로젝트를 완성해야하기 때문에 1주 스프린트를 진행하고 있는 셈이다.... </small>
-                            </p>
-                        </div>
+    <a href="https://bluewhale-korea.tistory.com/" style="text-decoration: none; color: inherit;">
+        <div class="card mb-3" style="max-width: 10000px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img/bluewhale_3J2B.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title" style="display: inline-block;">임현수님 블로그</h5>
+                        <img src="img/icontistory.png" alt="블로그 아이콘"
+                             style="width: 25px; height: 25px; margin-left: 1px; margin-bottom: 6px; display: inline-block; vertical-align: middle;">
+                        <p class="card-text">팀장</p>
+                        <p class="card-text">
+                            <small class="text-body-secondary"></small>
+                        </p>
+                        <small class="text-body-3">스파르타코딩클럽 Spirng 7기 본캠프 3일차...</small>
+                        <p> <small
+                            class="text-body-4" style="color: rgb(172, 172, 172);font-size: 0.8vw;">오전 스크럼 회의우리 팀은 오전 9시 10분에 스크럼 회의를
+                        하고 개발 및 공부에 들어간다....</small>
+                        </p>
                     </div>
                 </div>
             </div>
-        </a>
+        </div>
+    </a>
 
 
-        <a href="https://velog.io/@vaxee_/posts" style="text-decoration: none; color: inherit;">
-            <div class="card mb-3" style="max-width: 10000px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="img/vaxee_3J2B.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title" style="display: inline-block;">이한준님 블로그</h5>
-                            <img src="img/iconvelog.png" alt="블로그 아이콘"
-                                style="width: 20px; height: 20px; margin-left: 1px; margin-bottom: 5px; display: inline-block; vertical-align: middle;">
+    <a href="https://velog.io/@vaxee_/posts" style="text-decoration: none; color: inherit;">
+        <div class="card mb-3" style="max-width: 10000px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img/vaxee_3J2B.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title" style="display: inline-block;">이한준님 블로그</h5>
+                        <img src="img/iconvelog.png" alt="블로그 아이콘"
+                             style="width: 25px; height: 25px; margin-left: 1px; margin-bottom: 6px; display: inline-block; vertical-align: middle;">
 
-                            <p class="card-text">팀원</p>
-                            <p class="card-text">Every cloud has a silver lining.<small
-                                    class="text-body-secondary"><br><br>
-                                </small></p> <small class="text-body-3">첫 프로젝트의 마무리</small></p> <small
-                                class="text-body-4" style="color: rgb(172, 172, 172);">개요
-                                오늘은 프로젝트에서 내가 맡은 파트를 끝 마쳤다. 아직 파일들을 로컬에서 합치고 테스트하는 과정이 남기는 했지만,
-                                잘 완성된 것 같다. 오늘도 TIL 주제는 마주한 문제들에 대한 것들이다...
+                        <p class="card-text">팀원</p>
+                        <p class="card-text"><small class="text-body-secondary">
+                        </small></p> <small class="text-body-3">첫 프로젝트의 마무리</small>
+                        <p> <small
+                            class="text-body-4" style="color: rgb(172, 172, 172);font-size: 0.8vw;">개요
+                        오늘은 프로젝트에서 내가 맡은 파트를 끝 마쳤다. 아직 파일들을 로컬에서 합치고 테스트하는 과정이 남기는 했지만...
 
-                            </small>
-                        </div>
+                    </small>
                     </div>
                 </div>
             </div>
-        </a>
+        </div>
+    </a>
 
 
-        <a href="https://devnona.tistory.com/" style="text-decoration: none; color: inherit;">
-            <div class="card mb-3" style="max-width: 10000px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="img/devnona_3J2B.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title" style="display: inline-block;">정선우님 블로그</h5>
-                            <img src="img/icontistory.png" alt="블로그 아이콘"
-                                style="width: 25px; height: 25px; margin-left: 1px; margin-bottom: 6px; display: inline-block; vertical-align: middle;">
-                            <p class="card-text">팀원</p>
-                            <p class="card-text">DevNona.<small class="text-body-secondary"><br><br> </small></p> <small
-                                class="text-body-3">백준 4375번 리뷰 - 정수론</small></p> <small class="text-body-4"
-                                style="color: rgb(172, 172, 172);">해당 문제를 처음 접했을 때 계속해서 n*10+1로 만들어지는 각 자릿수가 1로만 이루어진 수가
-                                long 타입의 범위를 넘어갈 만큼 커지는 것에 대해 방법을 찾지 못해 고민했다....
+    <a href="https://devnona.tistory.com/" style="text-decoration: none; color: inherit;">
+        <div class="card mb-3" style="max-width: 10000px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img/devnona_3J2B.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title" style="display: inline-block;">정선우님 블로그</h5>
+                        <img src="img/icontistory.png" alt="블로그 아이콘"
+                             style="width: 25px; height: 25px; margin-left: 1px; margin-bottom: 6px; display: inline-block; vertical-align: middle;">
+                        <p class="card-text">팀원</p>
+                        <p class="card-text">
+                            <small class="text-body-secondary"></small>
+                        </p>
+                        <small class="text-body-3">백준 4375번 리뷰 - 정수론</small>
+                        <p>
+                            <small class="text-body-4" style="color: rgb(172, 172, 172);font-size: 0.8vw;">
+                                해당 문제를 처음 접했을 때 계속해서 n*10+1로 만들어지는 각 자릿수가 1로만...
                             </small>
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
-        </a>
+        </div>
+    </a>
 
 
-        <a href="https://dystopia45.tistory.com/" style="text-decoration: none; color: inherit;">
-            <div class="card mb-3" style="max-width: 10000px; height: 200;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="img/dystopia45_3J2B.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title" style="display: inline-block;">양혁진님 블로그</h5>
-                            <img src="img/icontistory.png" alt="블로그 아이콘"
-                                style="width: 25px; height: 25px; margin-left: 1px; margin-bottom: 6px; display: inline-block; vertical-align: middle;">
-                            <p class="card-text">팀원</p>
-                            <p class="card-text">통통튀는 완벽주의 개발자 블로그. <small class="text-body-secondary"> <br><br></small>
-                            </p><small class="text-body-3">백엔드 개발자 TIL
-                                [스파르타 백엔드 스프링 7기] 본캠프 3일차 블로그페이지 만들기 </small></p> <small class="text-body-4"
-                                style="color: rgb(172, 172, 172);">
-                                블로그페이지를 만들기전에 레이아웃을 담당한 팀원에게 레이아웃을 받았다. 상단 메뉴는 어디든지 일치해야되니까 당연하다. 와이어프레임대로 하는데에는 시간이 조금
-                                걸렸다.
+    <a href="https://dystopia45.tistory.com/" style="text-decoration: none; color: inherit;">
+        <div class="card mb-3" style="max-width: 10000px; height: 200;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img/dystopia45_3J2B.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title" style="display: inline-block;">양혁진님 블로그</h5>
+                        <img src="img/icontistory.png" alt="블로그 아이콘"
+                             style="width: 25px; height: 25px; margin-left: 1px; margin-bottom: 6px; display: inline-block; vertical-align: middle;">
+                        <p class="card-text">팀원</p>
+                        <p class="card-text"> <small class="text-body-secondary"></small></p>
+                        <small class="text-body-3">백엔드 개발자 TIL [스파르타 백엔드 스프링 7기] ... </small>
+                        <p>
+                            <small class="text-body-4" style="color: rgb(172, 172, 172); font-size: 0.8vw;">
+                                블로그페이지를 만들기전에 레이아웃을 담당한 팀원에게 레이아웃을 받았다. 상단 메뉴는 어디든지 일치해야되니까 당연하다....
                             </small>
-
-                            </small>
-
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
-        </a>
-    </section>
+        </div>
+    </a>
+</section>
 
 </body>
 
